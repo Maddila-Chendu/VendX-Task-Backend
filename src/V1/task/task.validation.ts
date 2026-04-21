@@ -1,8 +1,4 @@
 import { Request, Response, NextFunction } from 'express';
-import { Query, Result } from 'pg';
-import { queryObjects } from 'v8';
-import { registerUser } from './task.controller';
-import { error } from 'console';
 
 export const validateRegister = (req: Request, res: Response, next: NextFunction) => {
   console.log("req.body is:", req.body);
